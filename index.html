@@ -1,0 +1,14 @@
+<!doctype html>
+<meta charset="utf-8" />
+<canvas id="main-canvas" width=640 height=480></canvas>
+<script>
+    window.addEventListener('load', () => {
+        const ctx = document.getElementById('main-canvas').getContext('2d');
+
+        ctx.arc(320, 240, 100, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.fillText('This is a stub.', 290, 360);
+
+        console.log('Welcome to Space-Man');
+    });
+</script>
